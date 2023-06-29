@@ -4,12 +4,6 @@ const fs = require('fs');
 const app = express();
 const port = process.env.PORT || 4000;
 
-// const client = redis.createClient({
-//     host: 'garbage.redis.cache.windows.net',
-//     port: 6379,
-//     password: 'oWYXmCTwPoN9LxRv8e1OJGm3KO07RGjTzAzCaPlGaQw='
-// });
-
 const client = redis.createClient({
     url: `rediss://garbage.redis.cache.windows.net:6380`,
     password: 'oWYXmCTwPoN9LxRv8e1OJGm3KO07RGjTzAzCaPlGaQw='
