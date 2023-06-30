@@ -15,6 +15,7 @@ spec:
       containers:
       - name: node-redis-app
         image: proyectolibreria.azurecr.io/library-custom-api:latest
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 4000
       imagePullSecrets:
