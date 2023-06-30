@@ -19,7 +19,7 @@ spec:
         ports:
         - containerPort: 4000
       imagePullSecrets:
-        - name: customregistrykey
+        - name: kubekey
 ---
 apiVersion: v1
 kind: Service
